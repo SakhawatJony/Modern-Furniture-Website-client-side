@@ -18,7 +18,7 @@ const About = () => {
             </div>
           </div>
           <div className="col-12 col-md-6 text-start">
-            <h4 style={{color:'#A25B0F'}} className="fw-bold pb-1">
+            <h4 style={{color:'#6c757d'}} className="fw-bold pb-1">
             About Us Modern Furniture
             </h4>
             <hr />
@@ -34,10 +34,10 @@ const About = () => {
               select and buy the ones you like, and stay updated about new and
               contemporary designs
             </p>
-            <h4 style={{color:'#A25B0F'}} className="fw-bold pb-1">Our Mission</h4>
+            <h4 style={{color:'#6c757d'}} className="fw-bold pb-1">Our Mission</h4>
             <hr />
             <p>Our main mission is to satisfy our customer through Providing the quality Products, at the Right Price, at the Right Time.</p>
-            <h4 style={{color:'#A25B0F'}} className="fw-bold pb-1">Our Vision</h4>
+            <h4 style={{color:'#6c757d'}} className="fw-bold pb-1">Our Vision</h4>
             <hr />
             <p>Our goal is to become number one furniture company in Bangladesh. We want to lead in this sector...</p>
           </div>

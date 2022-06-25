@@ -9,10 +9,14 @@ const Footer = () => {
                     <div className="col">
                         <ul className='list-unstyled text-black'>
                             <h5>Company Information</h5>
-                            <li>About</li>
-                            <li>Blog</li>
-                            <li>Review</li>
-                            
+                            <li>About Us</li> 
+                            <li>Company Profiles</li> 
+                            <li>License & Certificates</li> 
+                            <li>Work Completion Certificate</li> 
+                            <li>Our Team</li>
+                            <li>Showrooms</li>
+                            <li>Catalogues</li>
+                            <li>Mordern Policies</li>                
                         </ul>
                     </div>
                     <div className="col">
@@ -21,6 +25,7 @@ const Footer = () => {
                             <li>Services</li>
                             <li>Supports</li>
                             <li>Privacy</li>
+                            <li>Contact Us</li>
                         </ul>
                     </div>
                     <div className="col">

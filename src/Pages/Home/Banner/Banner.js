@@ -16,7 +16,7 @@ const Banner = () => {
             <div className='text-black text-start'>
                  <div>
                  <h2 className='fw-bold pb-1'>Best Modern <span style={{color:'#A25B0F '}}>Furniture Collection</span></h2>
-                  <p className='pt-2'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt doloribus odit facilis eum officiis ea!!!!</p>
+                  <p style={{color:'#6c757d'}} className='pt-2'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt doloribus odit facilis eum officiis ea!!!!</p>
                   <Button className='border-0 fw-bold mt-2' style={{background:'#A25B0F'}} size="sm">
           Stock Now
         </Button>
