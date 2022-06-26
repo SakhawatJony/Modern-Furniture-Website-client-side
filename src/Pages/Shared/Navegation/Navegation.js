@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Logo from '../../../images/modernLogo.png'
+import { Link } from 'react-router-dom';
 
 const Navegation = () => {
     return (
@@ -29,11 +30,11 @@ const Navegation = () => {
                     navbarScroll
                    
                   >
-                    <Nav.Link href="#action1">Home</Nav.Link>
-                    <Nav.Link href="#action1">Furniture</Nav.Link>
-                    <Nav.Link href="#action1">About</Nav.Link>
+                 <Link to='/'  className='text-decoration-none fw-bold'> <Nav.Link href="#action1">Home</Nav.Link></Link>  
+                <Link to="furniture" className='text-decoration-none fw-bold'><Nav.Link href="#action1">Furniture</Nav.Link></Link> 
+                <Link to="about" className='text-decoration-none fw-bold'>      <Nav.Link href="#action1">About</Nav.Link></Link> 
                     <Nav.Link href="#action1">Blog</Nav.Link>
-                    <Nav.Link href="#action1">LogIn</Nav.Link>
+                    <Link to="login" className='text-decoration-none fw-bold'>  <Nav.Link href="#action1">LogIn</Nav.Link></Link> 
                     
                   </Nav>
                 </Navbar.Collapse>

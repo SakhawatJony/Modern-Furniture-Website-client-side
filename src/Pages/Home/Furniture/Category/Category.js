@@ -27,7 +27,7 @@ const Category = () => {
         <h3 style={{ color: "#A25B0F" }} className="fw-bold"> <i><span style={{color:'#6c757d'}}>Popular Furniture</span> By Choice</i></h3>
         <p style={{color:'#6c757d'}} >Categories our customers love to check out.</p>
          
-        <div class="row row-cols-1 row-cols-md-6 g-4 mt-4">
+        <div class="row row-cols-2 row-cols-md-6 g-4 mt-4">
             {/* item 1  */}
             <div id='card' className="col">
                 <div style={{height:'150px',width:'150px',border:'1px solid #6c757d'}} className='pt-4'>
