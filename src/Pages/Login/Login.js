@@ -12,6 +12,10 @@ const Login = () => {
             <h4 >Please LogIn</h4>
             <div className="container">
                 <div className="row align-items-center">
+                <div className="col-12 col-md-6">
+                        <img className='img-fluid h-100 w-100' src={LoginPage} alt="" />
+
+                    </div>
                     <div className="col-12 col-md-6">
                         <form>
                             <div class="mb-3">
@@ -41,10 +45,7 @@ const Login = () => {
                             </div>
                         </form>
                     </div>
-                    <div className="col-12 col-md-6">
-                        <img className='img-fluid h-100 w-100' src={LoginPage} alt="" />
-
-                    </div>
+                    
                     <p>
                         New to Modern-Furniture? <Link className='' to="/register">Create an account</Link>
                     </p>
