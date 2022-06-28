@@ -1,8 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import updateIcons from '../../../images/updated2.png'
 
 const Furniture = ({ furniture }) => {
-  const { name, supplier, description, img, price,quantity} = furniture;
+  const { id, name, supplier, description, img, price,quantity} = furniture;
+
+  const navigate = useNavigate();
+
+  const navigateToServiceDetails = id => {
+    navigate(`/service/${id}`);
+  }
   return (
     <div class="col">
       <div style={{ height: "450px",border:'1px solid #6c757d' }} class="card rounded">
@@ -21,7 +28,7 @@ const Furniture = ({ furniture }) => {
         </div>
         <div class="card-footer">
           <small class="text-muted">
-            <button type="button"  style={{background:'#A25B0F', color:'#ffff'}} class="btn fw-bold  btn-sm">
+            <button type="button" onClick={() => navigateToServiceDetails(id)} style={{background:'#A25B0F', color:'#ffff'}} class="btn fw-bold  btn-sm">
              <img src={updateIcons} style={{height:'20px',width:'20px'}} alt="" /> <span>update</span>
             </button>
           </small>
