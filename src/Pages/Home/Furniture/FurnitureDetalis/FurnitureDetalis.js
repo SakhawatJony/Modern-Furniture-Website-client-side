@@ -23,7 +23,7 @@ const FurnitureDetalis = () => {
                     <img src={service.img} class="card-img-top mx-auto pt-4" style={{ height: '200px', width: '200px' }} alt="" />
                     <div class="card-body">
                         <h6 class="card-title">Modal: {service.name}</h6>
-                        <h6 class="card-title">Supplier: {service.Supplier}</h6>
+                        <h6 class="card-title">Supplier: {service.supplier}</h6>
                         <h6 class="card-title">Price:${service.price}</h6>
                         <h6 class="card-title">Quty:{service.quantity}</h6>
                         <p class="card-text">{service.description}</p>
