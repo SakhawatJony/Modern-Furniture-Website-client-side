@@ -5,7 +5,7 @@ const Furnitures = () => {
   const [furnitures, setFurnitures] = useState([]);
 
   useEffect(() => {
-    fetch("./services.json")
+    fetch("http://localhost:5000/furniture")
       .then((res) => res.json())
       .then((data) => setFurnitures(data));
   }, []);

@@ -9,6 +9,7 @@ import About from "./Pages/Home/About/About";
 import Login from "./Pages/Login/Login";
 import Register from "./Pages/Login/Register/Register";
 import FurnitureDetalis from "./Pages/Home/Furniture/FurnitureDetalis/FurnitureDetalis";
+import AddFurniture from "./Pages/UserLogin/AddFurniture/AddFurniture";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="about" element={<About></About>}></Route>
         <Route path="login" element={<Login></Login>}></Route>
         <Route path="register" element={<Register></Register>}></Route>
+        <Route path="addFurniture" element={<AddFurniture></AddFurniture>}></Route>
         <Route
           path="/service/:serviceId"
           element={<FurnitureDetalis></FurnitureDetalis>}
