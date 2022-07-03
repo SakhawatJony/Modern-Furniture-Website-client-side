@@ -8,7 +8,7 @@ const FurnitureDetalis = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5000/furniture/${serviceId}`;
+        const url = `https://nameless-dawn-50265.herokuapp.com/furniture/${serviceId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setService(data));
@@ -30,7 +30,7 @@ const FurnitureDetalis = () => {
 
 
 
-        const url = `http://localhost:5000/furniture/${serviceId}`;
+        const url = `https://nameless-dawn-50265.herokuapp.com/furniture/${serviceId}`;
         fetch(url, {
             method: "PUT",
             headers: { "content-type": "application/json" },
@@ -59,7 +59,7 @@ const FurnitureDetalis = () => {
 
 
 
-        const url = `http://localhost:5000/furniture/${serviceId}`;
+        const url = `https://nameless-dawn-50265.herokuapp.com/furniture/${serviceId}`;
         fetch(url, {
             method: "PUT",
             headers: { "content-type": "application/json" },

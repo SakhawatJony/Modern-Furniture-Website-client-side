@@ -78,7 +78,7 @@ const Navegation = () => {
                   </Link>
                 </li>
                 <li class="nav-item">
-                  <Link to="/" className="text-decoration-none fw-bold">
+                  <Link to="/myItem" className="text-decoration-none fw-bold">
                     <a
                       href="n"
                       className="nav-link"

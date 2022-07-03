@@ -9,7 +9,7 @@ const AddFurniture = () => {
 
     const onSubmit = data => {
         console.log(data);
-        const url = 'http://localhost:5000/stock';
+        const url = 'https://nameless-dawn-50265.herokuapp.com/stock';
         fetch(url, {
             method: 'POST',
             headers: {

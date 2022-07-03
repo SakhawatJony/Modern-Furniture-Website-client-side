@@ -10,6 +10,9 @@ import Login from "./Pages/Login/Login";
 import Register from "./Pages/Login/Register/Register";
 import FurnitureDetalis from "./Pages/Home/Furniture/FurnitureDetalis/FurnitureDetalis";
 import AddFurniture from "./Pages/UserLogin/AddFurniture/AddFurniture";
+import ManageFurnitures from "./Pages/UserLogin/ManageFurnitures/ManageFurnitures";
+import MyItem from "./Pages/UserLogin/MyItem/MyItem";
+import NotFound from "./Pages/NotFound/NotFound";
 
 function App() {
   return (
@@ -22,10 +25,13 @@ function App() {
         <Route path="login" element={<Login></Login>}></Route>
         <Route path="register" element={<Register></Register>}></Route>
         <Route path="addFurniture" element={<AddFurniture></AddFurniture>}></Route>
+      <Route path="/manageInventories" element={ <ManageFurnitures></ManageFurnitures>}></Route>
+      <Route path="/myItem" element={ <MyItem></MyItem> }></Route>
         <Route
           path="/service/:serviceId"
           element={<FurnitureDetalis></FurnitureDetalis>}
         ></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
