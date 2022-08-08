@@ -13,6 +13,8 @@ import AddFurniture from "./Pages/UserLogin/AddFurniture/AddFurniture";
 import ManageFurnitures from "./Pages/UserLogin/ManageFurnitures/ManageFurnitures";
 import MyItem from "./Pages/UserLogin/MyItem/MyItem";
 import NotFound from "./Pages/NotFound/NotFound";
+import RequireAuth from "./Pages/Login/RequireAuth/RequireAuth";
+import Blogs from "./Pages/Home/Blogs/Blogs";
 
 function App() {
   return (
@@ -23,13 +25,18 @@ function App() {
         <Route path="furniture" element={<Furnitures></Furnitures>}></Route>
         <Route path="about" element={<About></About>}></Route>
         <Route path="login" element={<Login></Login>}></Route>
+        <Route path="blog" element={<Blogs></Blogs>}></Route>
         <Route path="register" element={<Register></Register>}></Route>
         <Route path="addFurniture" element={<AddFurniture></AddFurniture>}></Route>
       <Route path="/manageInventories" element={ <ManageFurnitures></ManageFurnitures>}></Route>
       <Route path="/myItem" element={ <MyItem></MyItem> }></Route>
         <Route
           path="/service/:serviceId"
-          element={<FurnitureDetalis></FurnitureDetalis>}
+          element={
+          <RequireAuth>
+           <FurnitureDetalis></FurnitureDetalis>
+          </RequireAuth>
+          }
         ></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>

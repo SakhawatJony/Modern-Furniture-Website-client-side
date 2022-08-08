@@ -51,7 +51,10 @@ const Navegation = () => {
               {" "}
               <Nav.Link href="#action1">About</Nav.Link>
             </Link>
-            <Nav.Link href="#action1">Blog</Nav.Link>
+            <Link to="blog" className="text-decoration-none fw-bold">
+              {" "}
+              <Nav.Link href="#action1">Blog</Nav.Link>
+            </Link>
             {user?.email ? (
               <div className=" d-flex">
                 <li class="nav-item">

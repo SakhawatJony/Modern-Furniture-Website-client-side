@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import deletBg from '../../../images/delete.png'
+import deletBg from '../../../images/Icons/delete.png'
 
 const ManageFurnitures = () => {
     const [stock, setStock] = useState([])
@@ -54,7 +54,7 @@ const ManageFurnitures = () => {
                                             <button 
                                             onClick={() => handleDelete(pd._id)}
                                             style={{ background: '#A25B0F' }} 
-                                            className='btn btn-md fw-bold mt-3  text-white'> <img style={{ height: '30px', width: '30px' }} src={deletBg} alt="" /> delete</button>
+                                            className='btn btn-md fw-bold mt-3  text-white'> <img style={{ height: '25px', width: '25px' }} src={deletBg} alt="" /> Delete</button>
 
                                         </ul>
                                     </div>
