@@ -20,7 +20,7 @@ const ManageFurnitures = () => {
     const handleDelete = id =>{
         const proceed = window.confirm('Are you sure?');
         if(proceed){
-            const url = `https://nameless-dawn-50265.herokuapp.com/stock/${id}`;
+            const url = `https://my-furniture-server-side.vercel.app/stock/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

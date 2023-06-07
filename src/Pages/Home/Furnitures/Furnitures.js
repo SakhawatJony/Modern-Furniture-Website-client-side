@@ -5,7 +5,7 @@ const Furnitures = () => {
   const [furnitures, setFurnitures] = useState([]);
 
   useEffect(() => {
-    fetch("https://nameless-dawn-50265.herokuapp.com/furniture")
+    fetch("https://my-furniture-server-side.vercel.app/furniture")
       .then((res) => res.json())
       .then((data) => setFurnitures(data));
   }, []);

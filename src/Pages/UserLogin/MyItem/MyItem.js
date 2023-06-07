@@ -12,7 +12,7 @@ const MyItem = () => {
         const getItem = async () => {
             const email = user?.email;
             console.log(email);
-            const url = `https://nameless-dawn-50265.herokuapp.com/stock/?email=${email}`
+            const url = `https://my-furniture-server-side.vercel.app/stock/?email=${email}`
             try {
 
                 const { data } = await axios.get(url);
